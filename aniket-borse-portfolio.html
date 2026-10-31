@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Aniket Borse | Business & Data Analyst</title>
+<meta name="description" content="Portfolio of Aniket Borse, Business & Data Analyst in Mumbai. Power BI, SQL, Excel, Python.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Source+Sans+3:wght@400;600&display=swap">
+<style>
+:root{
+  --bg:#F6F7F9;--surface:#FFFFFF;--ink:#0F1B2D;--muted:#52606F;--line:#D9DEE5;
+  --accent:#C8202B;--accent-ink:#FFFFFF;--bar:#9FB0C3;--bar-low:#C8202B;--bar-top:#0E7C86;
+  --display:"Bricolage Grotesque","Segoe UI",system-ui,sans-serif;
+  --body:"Source Sans 3","Segoe UI",system-ui,sans-serif;
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#0D1520;--surface:#142031;--ink:#E8EDF3;--muted:#9AA9BA;--line:#25354A;
+    --accent:#FF6B72;--accent-ink:#0D1520;--bar:#3B5069;--bar-low:#FF6B72;--bar-top:#3CC4CF;color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0D1520;--surface:#142031;--ink:#E8EDF3;--muted:#9AA9BA;--line:#25354A;
+  --accent:#FF6B72;--accent-ink:#0D1520;--bar:#3B5069;--bar-low:#FF6B72;--bar-top:#3CC4CF;color-scheme:dark;
+}
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + 64px);scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 var(--body)}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:4px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 24px}
+header.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--bg);border-bottom:1px solid var(--line)}
+header.top .wrap{display:flex;align-items:center;justify-content:space-between;height:56px;gap:16px}
+.brand{font:700 18px var(--display);text-decoration:none}
+nav{display:flex;gap:18px;overflow-x:auto}
+nav a{text-decoration:none;color:var(--muted);font-weight:600;font-size:15px;white-space:nowrap}
+nav a:hover{color:var(--ink)}
+#theme{background:none;border:1px solid var(--line);color:var(--ink);border-radius:999px;padding:6px 12px;font:600 14px var(--body);cursor:pointer}
+.hero{padding:72px 0 56px;display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center}
+h1{font:800 clamp(38px,6vw,64px)/1.04 var(--display);letter-spacing:-.02em;margin:0 0 20px}
+.lede{font-size:20px;color:var(--muted);max-width:34em;margin:0 0 28px}
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-block;padding:12px 20px;border-radius:8px;font-weight:600;text-decoration:none;border:1.5px solid var(--ink)}
+.btn.main{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.chart{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:20px}
+.chart h2{font:700 16px var(--display);margin:0 0 4px}
+.chart p{margin:0 0 12px;color:var(--muted);font-size:14px}
+.chart svg{width:100%;height:auto;display:block}
+.chart rect.b{transform-origin:left center;transform-box:fill-box;animation:grow .9s ease-out both}
+@keyframes grow{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:0 0 72px;padding:0;list-style:none}
+.stats li{border-top:3px solid var(--ink);padding-top:12px}
+.stats b{display:block;font:800 34px var(--display)}
+.stats span{color:var(--muted);font-size:15px}
+section.blk{display:grid;grid-template-columns:200px 1fr;gap:32px;padding:48px 0;border-top:1px solid var(--line)}
+section.blk>h2{font:700 24px var(--display);margin:0}
+.blk p{margin:0 0 14px;max-width:62ch}
+.skills{display:grid;gap:18px;margin:0}
+.skills dt{font-weight:600}
+.skills dd{margin:2px 0 0;color:var(--muted)}
+.tl{list-style:none;margin:0;padding:0 0 0 22px;border-left:2px solid var(--line)}
+.tl>li{position:relative;padding-bottom:36px}
+.tl>li::before{content:"";position:absolute;left:-29px;top:8px;width:12px;height:12px;border-radius:50%;background:var(--accent)}
+.tl h3{font:700 20px var(--display);margin:0}
+.tl .meta{color:var(--muted);margin:2px 0 10px;font-size:15px}
+.tl ul{margin:0;padding-left:20px}
+.tl li li{margin-bottom:6px;padding:0}
+.tl li li::before{display:none}
+.proj{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+.proj a{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:18px;text-decoration:none;display:block}
+.proj a:hover{border-color:var(--accent)}
+.proj b{font:700 18px var(--display);display:block}
+.proj span{color:var(--muted);font-size:15px}
+.plain{list-style:none;margin:0;padding:0}
+.plain li{padding:6px 0}
+.contact a{font-weight:600}
+footer{border-top:1px solid var(--line);padding:28px 0;color:var(--muted);font-size:15px}
+.dash{background:var(--surface);border:1px solid var(--line);border-radius:12px;overflow:hidden;color:var(--ink)}
+.dtabs{display:flex;flex-wrap:wrap;border-bottom:1px solid var(--line)}
+.dtabs button{flex:1;min-width:180px;background:none;border:0;border-bottom:3px solid transparent;color:var(--muted);padding:12px 14px;font:600 15px var(--body);cursor:pointer}
+.dtabs button.on{color:var(--ink);border-bottom-color:var(--accent)}
+.dpane{padding:16px}.dpane[hidden]{display:none}
+.slicer{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px}
+.slicer button{border:1px solid var(--line);background:none;color:var(--ink);border-radius:6px;padding:5px 12px;font:600 14px var(--body);cursor:pointer}
+.slicer button.on{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:10px;margin-bottom:14px}
+.kpis div{border:1px solid var(--line);border-radius:8px;padding:10px 12px}
+.kpis b{display:block;font:800 22px var(--display)}.kpis span{color:var(--muted);font-size:13px}
+.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:12px}
+.panel{border:1px solid var(--line);border-radius:8px;padding:12px}
+.panel h4{margin:0 0 8px;font:700 14px var(--display)}
+.panel svg{width:100%;height:auto;display:block}
+.note{color:var(--muted);font-size:15px;margin-top:14px}
+@media (max-width:760px){
+  .hero{grid-template-columns:1fr;padding-top:44px}
+  section.blk{grid-template-columns:1fr;gap:16px}
+  .stats{grid-template-columns:1fr}
+  nav{display:none}
+}
+@media (prefers-reduced-motion:reduce){.chart rect.b{animation:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <a class="brand" href="#top">Aniket Borse</a>
+  <nav aria-label="Sections"><a href="#about">About</a><a href="#skills">Skills</a><a href="#experience">Experience</a><a href="#dashboards">Dashboards</a><a href="#projects">Projects</a><a href="#education">Education</a><a href="#contact">Contact</a></nav>
+  <button id="theme" type="button" aria-label="Switch light or dark theme">Theme</button>
+</div></header>
+
+<main class="wrap" id="top">
+  <div class="hero">
+    <div>
+      <h1>I turn store-level sales data into decisions.</h1>
+      <p class="lede">Aniket Borse is a Business &amp; Data Analyst in Mumbai. He builds Power BI dashboards, SQL reports and automation for retail, automotive and fleet teams.</p>
+      <div class="btns">
+        <a class="btn main" href="mailto:3249.m.aniket@gmail.com">Email me</a>
+        <a class="btn" href="#projects">See my projects</a>
+      </div>
+    </div>
+    <figure class="chart" style="margin:0" aria-label="Illustrative chart of stores ranked by weekly sales">
+      <h2>Top 10 and bottom 10 store analysis</h2>
+      <p>Illustrative example, not real company data.</p>
+      <svg viewBox="0 0 320 210" role="img" aria-label="Horizontal bars ranking stores, top performers in teal, lowest in red">
+        <g font-size="11" fill="currentColor" style="font-family:var(--body)">
+          <text x="0" y="17">Store A</text><rect class="b" x="60" y="6" width="250" height="16" rx="3" fill="var(--bar-top)" style="animation-delay:.05s"/>
+          <text x="0" y="45">Store B</text><rect class="b" x="60" y="34" width="228" height="16" rx="3" fill="var(--bar-top)" style="animation-delay:.12s"/>
+          <text x="0" y="73">Store C</text><rect class="b" x="60" y="62" width="205" height="16" rx="3" fill="var(--bar-top)" style="animation-delay:.19s"/>
+          <text x="0" y="101">Store D</text><rect class="b" x="60" y="90" width="170" height="16" rx="3" fill="var(--bar)" style="animation-delay:.26s"/>
+          <text x="0" y="129">Store E</text><rect class="b" x="60" y="118" width="140" height="16" rx="3" fill="var(--bar)" style="animation-delay:.33s"/>
+          <text x="0" y="157">Store F</text><rect class="b" x="60" y="146" width="92" height="16" rx="3" fill="var(--bar-low)" style="animation-delay:.4s"/>
+          <text x="0" y="185">Store G</text><rect class="b" x="60" y="174" width="58" height="16" rx="3" fill="var(--bar-low)" style="animation-delay:.47s"/>
+        </g>
+      </svg>
+    </figure>
+  </div>
+
+  <ul class="stats">
+    <li><b>150+</b><span>KFC stores tracked in daily sales reporting</span></li>
+    <li><b>1000+</b><span>employees covered by an attendance dashboard</span></li>
+    <li><b>2.5+ years</b><span>in analytics across retail, auto and fleet</span></li>
+  </ul>
+
+  <section class="blk" id="about"><h2>About</h2><div>
+    <p>I work where sales numbers meet store operations. At Sapphire Foods I report daily sales performance for 150+ KFC stores, find which stores are pulling ahead or falling behind, and trace the reasons to the people who can act on them.</p>
+    <p>Before that I built Power BI dashboards and automated reports at Mahindra &amp; Mahindra and Genesys International. I also write BRDs and FRDs, so I can take a request from a business team and turn it into a working report.</p>
+    <p>I am currently studying Generative AI, Machine Learning and AWS.</p>
+  </div></section>
+
+  <section class="blk" id="skills"><h2>Skills</h2>
+    <dl class="skills">
+      <div><dt>Business intelligence</dt><dd>Power BI (DAX, data modeling, Power Query), Tableau, Excel dashboards</dd></div>
+      <div><dt>Data analysis</dt><dd>Trend, gap and root cause analysis; WoW, MoM, MTD, QTD and YTD reporting; data validation and cleaning</dd></div>
+      <div><dt>Databases</dt><dd>SQL (joins, CTEs, window functions), Microsoft Access, MongoDB basics</dd></div>
+      <div><dt>Automation and code</dt><dd>Python (Pandas, NumPy, Matplotlib, Seaborn), Excel VBA and macros</dd></div>
+      <div><dt>Excel</dt><dd>Pivot tables, Power Pivot, XLOOKUP, INDEX-MATCH</dd></div>
+      <div><dt>Business analysis</dt><dd>Requirement gathering, BRD and FRD writing, UAT, stakeholder coordination</dd></div>
+      <div><dt>Also familiar with</dt><dd>SAP data extraction, R, Google Earth and QGIS</dd></div>
+    </dl>
+  </section>
+
+  <section class="blk" id="experience"><h2>Experience</h2>
+    <ol class="tl">
+      <li><h3>Assistant Manager, Business Data Analyst (KFC)</h3>
+        <p class="meta">Sapphire Foods India Pvt. Ltd. | Mar 2026 to present</p>
+        <ul>
+          <li>Built Power BI dashboards and automated reports on daily sales and store KPIs for 150+ stores.</li>
+          <li>Ran WoW, MoM, MTD, QTD and YTD analysis in Power BI and SQL to spot trends and performance gaps.</li>
+          <li>Ranked top 10 and bottom 10 stores and traced the drivers behind each result.</li>
+          <li>Wrote BRDs and FRDs with input from Sales, Marketing and Supply Chain.</li>
+          <li>Tracked missing sales data and resolved discrepancies with stakeholders.</li>
+        </ul></li>
+      <li><h3>Data Analyst</h3>
+        <p class="meta">Mahindra &amp; Mahindra | Jun 2025 to Feb 2026</p>
+        <ul>
+          <li>Delivered daily and monthly sales MIS to field teams and senior management.</li>
+          <li>Built Power BI dashboards for sales performance and part-wise, zone-wise analysis.</li>
+          <li>Automated recurring reports with VBA, macros and Python, saving about 3 hours a week.</li>
+          <li>Prepared analysis and decks for management reviews and a conference award ceremony.</li>
+        </ul></li>
+      <li><h3>Executive, Report Analyst</h3>
+        <p class="meta">Genesys International | Apr 2024 to Jun 2025</p>
+        <ul>
+          <li>Built Power BI and Excel attendance dashboards for 1000+ employees.</li>
+          <li>Developed a Python vehicle tracking application and automated daily fleet reports in VBA.</li>
+          <li>Managed large datasets in SQL for projects including Google, BMC and Adani.</li>
+        </ul></li>
+    </ol>
+  </section>
+
+  <section class='blk' id='dashboards'><h2>Dashboards</h2><div>
+<p>Sample dashboards in the style of the reports I build. They use made-up data, so no company information is shown. Try the filters and hover over the charts.</p>
+<div class='dash'>
+<div class='dtabs'><button type='button' class='on' data-t='pbi'>Power BI: sales performance</button><button type='button' data-t='tab'>Tableau: store explorer</button></div>
+<div id='pbi' class='dpane'><div class='slicer' id='sl'></div><div class='kpis' id='kp'></div>
+<div class='grid2'><div class='panel'><h4>Daily net sales, last 14 days (₹ lakh)</h4><svg id='ln' viewBox='0 0 360 150'></svg></div><div class='panel'><h4>Sales by region, last 7 days</h4><svg id='rg' viewBox='0 0 360 150'></svg></div></div></div>
+<div id='tab' class='dpane' hidden><div class='grid2'><div class='panel'><h4>Weekly sales index by store (darker is higher)</h4><svg id='hm' viewBox='0 0 360 146'></svg></div><div class='panel'><h4>Sales vs growth: red dots need attention</h4><svg id='sp' viewBox='0 0 360 152'></svg></div></div></div>
+</div>
+<p class='note'>My real dashboards and their code are in the GitHub projects below.</p>
+</div></section>
+
+<section class="blk" id="projects"><h2>Projects</h2>
+    <div class="proj">
+      <a href="https://github.com/Aniket0167/Power-BI-Projects" target="_blank" rel="noopener"><b>Power BI</b><span>Dashboards and KPI reports</span></a>
+      <a href="https://github.com/Aniket0167/SQL-Projects" target="_blank" rel="noopener"><b>SQL</b><span>Queries and analysis</span></a>
+      <a href="https://github.com/Aniket0167/Advance-Excel-Projects" target="_blank" rel="noopener"><b>Advanced Excel</b><span>Dashboards and models</span></a>
+      <a href="https://github.com/Aniket0167/Tableau-Projects" target="_blank" rel="noopener"><b>Tableau</b><span>Visual analysis</span></a>
+      <a href="https://github.com/Aniket0167/Sample-Python-Projects" target="_blank" rel="noopener"><b>Python</b><span>Data cleaning and EDA</span></a>
+    </div>
+  </section>
+
+  <section class="blk" id="education"><h2>Education and certifications</h2>
+    <ul class="plain">
+      <li><b>Generative AI, ML and AWS</b>, Coding Ninjas, 2026</li>
+      <li><b>Data Analysis and Data Visualization</b>, G-Tech Jain, 2024</li>
+      <li><b>B.Com</b>, Thakur College of Science &amp; Commerce, 2022</li>
+      <li>Certified Data Analyst and Business Analyst</li>
+      <li>Microsoft Certified: Advanced Excel</li>
+      <li>TCS NQT qualified</li>
+    </ul>
+  </section>
+
+  <section class="blk contact" id="contact"><h2>Contact</h2><div>
+    <p>Open to Business Analyst and Data Analyst roles. The fastest way to reach me is email.</p>
+    <ul class="plain">
+      <li>Email: <a href="mailto:3249.m.aniket@gmail.com">3249.m.aniket@gmail.com</a></li>
+      <li>Phone: <a href="tel:+919594600747">+91 95946 00747</a></li>
+      <li>LinkedIn: <a href="https://www.linkedin.com/in/aniket-borse634b" target="_blank" rel="noopener">linkedin.com/in/aniket-borse634b</a></li>
+      <li>GitHub: <a href="https://github.com/Aniket0167" target="_blank" rel="noopener">github.com/Aniket0167</a></li>
+      <li>Location: Mumbai, Maharashtra</li>
+    </ul>
+  </div></section>
+</main>
+<footer><div class="wrap">© 2026 Aniket Borse. Languages: English, Hindi, Marathi, Gujarati.</div></footer>
+<script>
+(function(){
+  var b=document.getElementById('theme'),r=document.documentElement;
+  b.addEventListener('click',function(){
+    var dark=r.getAttribute('data-theme')==='dark'||(r.getAttribute('data-theme')!=='light'&&window.matchMedia('(prefers-color-scheme: dark)').matches);
+    r.setAttribute('data-theme',dark?'light':'dark');
+  });
+})();
+</script>
+<script>
+(function(){
+function q(s){return document.querySelector(s)}
+function rng(s){return function(){s=(s*9301+49297)%233280;return s/233280}}
+function sum(a){return a.reduce(function(x,y){return x+y},0)}
+var R={All:1,West:.42,North:.33,South:.25},keys=Object.keys(R),r1=rng(7),base=[];
+for(var i=0;i<14;i++)base.push(62+i*.9+7*Math.sin(i*.9)+r1()*4);
+function ser(k){return base.map(function(v,i){return v*R[k]*(1+((k.length*7+i*3)%5-2)/100)})}
+function draw(k){
+var s=ser(k),l=sum(s.slice(7)),p=sum(s.slice(0,7)),w=(l/p-1)*100;
+q('#kp').innerHTML=[['Net sales, 7 days','₹'+l.toFixed(0)+' lakh'],['Week on week',(w>=0?'+':'')+w.toFixed(1)+'%'],['Active stores',Math.round(150*R[k])],['Avg bill value','₹'+(405+k.length*3)]].map(function(x){return `<div><b>${x[1]}</b><span>${x[0]}</span></div>`}).join('');
+var mn=Math.min.apply(null,s),mx=Math.max.apply(null,s),pt=s.map(function(v,i){return [10+i*26.9,135-(v-mn)/(mx-mn||1)*110]}),d=pt.map(function(a){return a[0].toFixed(1)+','+a[1].toFixed(1)}).join(' ');
+q('#ln').innerHTML=`<polygon points='10,140 ${d} 349,140' fill='var(--bar-top)' fill-opacity='.15'/><polyline points='${d}' fill='none' stroke='var(--bar-top)' stroke-width='2.5'/><circle cx='${pt[13][0]}' cy='${pt[13][1]}' r='4' fill='var(--accent)'/>`;
+var rg=keys.slice(1).map(function(n){return [n,sum(ser(n).slice(7))]}),m=Math.max.apply(null,rg.map(function(x){return x[1]}));
+q('#rg').innerHTML=rg.map(function(x,i){var y=14+i*42,on=k==='All'||k===x[0],wd=x[1]/m*230;return `<text x='0' y='${y+16}' font-size='12' fill='currentColor'>${x[0]}</text><rect x='52' y='${y}' width='${wd.toFixed(0)}' height='24' rx='3' fill='${on?'var(--bar-top)':'var(--bar)'}'/><text x='${(58+wd).toFixed(0)}' y='${y+16}' font-size='12' fill='currentColor'>₹${x[1].toFixed(0)}L</text>`}).join('');
+}
+q('#sl').innerHTML=keys.map(function(k,i){return `<button type='button' data-k='${k}' class='${i?'':'on'}'>${k}</button>`}).join('');
+q('#sl').addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;[].forEach.call(this.children,function(c){c.classList.toggle('on',c===b)});draw(b.dataset.k)});
+draw('All');
+q('.dtabs').addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;[].forEach.call(this.children,function(c){c.classList.toggle('on',c===b);q('#'+c.dataset.t).hidden=c!==b})});
+var r2=rng(21),h='';
+for(var a=0;a<6;a++)h+=`<text x='${82+a*48}' y='9' font-size='9' fill='currentColor'>W${a+1}</text>`;
+for(var t=0;t<8;t++){var f=.55+r2()*.4;h+=`<text x='0' y='${25+t*16}' font-size='10' fill='currentColor'>Store ${t+1}</text>`;for(var u=0;u<6;u++){var v=Math.min(1,Math.max(.08,f+u*.03+(r2()-.5)*.35));h+=`<rect x='${64+u*48}' y='${14+t*16}' width='46' height='14' rx='2' fill='var(--bar-top)' fill-opacity='${v.toFixed(2)}'><title>Store ${t+1}, week ${u+1}: index ${Math.round(v*100)}</title></rect>`}}
+q('#hm').innerHTML=h;
+var r3=rng(5),sc=`<line x1='180' y1='6' x2='180' y2='134' stroke='var(--line)'/><line x1='10' y1='70' x2='350' y2='70' stroke='var(--line)'/>`;
+for(var j=0;j<28;j++){var x=15+r3()*330,y=12+r3()*116,low=y>70&&x<180;sc+=`<circle cx='${x.toFixed(0)}' cy='${y.toFixed(0)}' r='5' fill='${low?'var(--bar-low)':'var(--bar-top)'}' fill-opacity='.8'><title>Sales index ${Math.round(x/3.6)}, growth ${Math.round((70-y)/1.2)}%</title></circle>`}
+sc+=`<text x='12' y='148' font-size='10' fill='currentColor'>Lower sales</text><text x='296' y='148' font-size='10' fill='currentColor'>Higher sales</text>`;
+q('#sp').innerHTML=sc;
+})();
+</script>
+</body>
+</html>
